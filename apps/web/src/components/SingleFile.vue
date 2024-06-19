@@ -1,7 +1,5 @@
 <template>
-  <a-upload
-    action="http://localhost:5172/api/uploadSingleFile"
-  >
+  <a-upload action="http://localhost:5172/api/uploadSingleFile">
     <a-button>
       单文件上传
     </a-button>
