@@ -1,12 +1,22 @@
-import { Controller, Get } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  UploadedFile,
+  UseInterceptors,
+} from '@nestjs/common';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { AppService } from './app.service';
+import { FileInterceptor } from '@nestjs/platform-express';
 
+@ApiTags('文件上传')
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @ApiOperation({ summary: '单文件上传' })
+  @Post('uploadSingleFile')
+  @UseInterceptors(FileInterceptor('file'))
+  uploadFile(@UploadedFile() file: Express.Multer.File) {
+    console.log(file);
   }
 }
