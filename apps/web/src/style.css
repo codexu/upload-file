@@ -1,5 +1,11 @@
-html, body{
+body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#app {
+  display: grid;
+  gap: 24px;
 }

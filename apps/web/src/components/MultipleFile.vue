@@ -1,0 +1,10 @@
+<template>
+  <a-upload
+    :multiple="true"
+    action="http://localhost:5172/api/uploadMultipleFile"
+  >
+    <a-button>
+      多文件上传（多次请求）
+    </a-button>
+  </a-upload>
+</template>
