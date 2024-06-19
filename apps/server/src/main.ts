@@ -10,7 +10,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   app.enableCors({
-    origin: 'http://localhost:5173/',
+    origin: 'http://localhost:5173',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
@@ -37,6 +37,6 @@ async function bootstrap() {
     dest: './upload',
   });
 
-  await app.listen(3000);
+  await app.listen(5172);
 }
 bootstrap();

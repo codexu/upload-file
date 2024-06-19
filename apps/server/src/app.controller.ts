@@ -17,6 +17,6 @@ export class AppController {
   @Post('uploadSingleFile')
   @UseInterceptors(FileInterceptor('file'))
   uploadFile(@UploadedFile() file: Express.Multer.File) {
-    console.log(file);
+    return this.appService.saveFile(file);
   }
 }
