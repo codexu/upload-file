@@ -1,5 +1,6 @@
 <template>
-  <button @click="handleUpload">单文件上传</button>
+  <h2>单文件上传</h2>
+  <button @click="handleUpload">选择文件</button>
   <input type="file" ref="fileInput" style="display: none;" />
 </template>
 

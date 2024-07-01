@@ -1,6 +1,7 @@
 <template>
-  <button @click="handleUpload">图片预览</button>
-  <input type="file" ref="fileInput" style="display: none;" />
+  <h2>图片预览</h2>
+  <button @click="handleUpload">选择图片</button>
+  <input type="file" ref="fileInput" style="display: none;" accept="image/*" />
   <img :src="imageData" />
 </template>
 
