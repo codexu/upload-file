@@ -1,10 +1,5 @@
 <template>
-  <a-upload :multiple="true" action="http://localhost:5172/api/uploadSingleFile">
-    <a-button>
-      多文件上传（多次请求）
-    </a-button>
-  </a-upload>
-  <a-button @click="handleUpload">多文件上传（单次请求）</a-button>
+  <button @click="handleUpload">多文件上传</button>
   <input type="file" multiple ref="fileInput" style="display: none;" />
 </template>
 
