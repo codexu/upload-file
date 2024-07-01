@@ -13,24 +13,3 @@ import VideoCover from './components/VideoCover.vue'
     <VideoCover />
   </div>
 </template>
-
-<style>
-.scence-container{
-  display: grid;
-  gap: 24px;
-}
-
-h2 {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-button{
-  max-width: 180px;
-  height: 28px;
-}
-
-img {
-  width: 400px;
-}
-</style>
