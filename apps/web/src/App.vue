@@ -66,5 +66,5 @@ import VideoCover from './components/preview/VideoCover.vue'
 import PdfPreview from './components/preview/PdfPreview.vue'
 import DocxPreview from './components/preview/DocxPreview.vue'
 import XlsxPreview from './components/preview/XlsxPreview.vue'
-import DropArea from './components/preview/DropArea.vue'
+import DropArea from './components/action/DropArea.vue'
 </script>
