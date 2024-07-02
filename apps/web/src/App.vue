@@ -22,6 +22,7 @@
     <a-tab-pane key="action" tab="操作场景">
       <a-collapse accordion>
         <a-collapse-panel header="拖拽">
+          <DropArea />
         </a-collapse-panel>
         <a-collapse-panel header="文件夹">
         </a-collapse-panel>
@@ -65,4 +66,5 @@ import VideoCover from './components/preview/VideoCover.vue'
 import PdfPreview from './components/preview/PdfPreview.vue'
 import DocxPreview from './components/preview/DocxPreview.vue'
 import XlsxPreview from './components/preview/XlsxPreview.vue'
+import DropArea from './components/preview/DropArea.vue'
 </script>
