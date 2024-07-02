@@ -1,12 +1,14 @@
 <template>
   <a-button @click="handleUpload">选择文件</a-button>
-  <input type="file" ref="fileInput" style="display: none;" />
+  <input type="file" ref="fileInput" style="display: none;" accept="application/pdf" />
+  <object :data="dataURL" width="800" height="400"></object>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
 const fileInput = ref<HTMLInputElement>();
+const dataURL = ref('');
 
 function handleUpload() {
   if (fileInput.value) {
@@ -19,13 +21,8 @@ onMounted(() => {
     return;
   }
   fileInput.value.addEventListener('change', async (event) => {
-    const files = (event.target as HTMLInputElement).files;
-    const formData = new FormData();
-    formData.append('file', files![0]);
-    await fetch('http://localhost:5172/api/uploadSingleFile', {
-      method: 'POST',
-      body: formData
-    });
+    const file = (event.target as HTMLInputElement).files![0];
+    dataURL.value = URL.createObjectURL(file);
   });
 })
 

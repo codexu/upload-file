@@ -1,6 +1,5 @@
 <template>
-  <h2>多文件上传</h2>
-  <button @click="handleUpload">选择文件</button>
+  <a-button @click="handleUpload">选择文件</a-button>
   <input type="file" multiple ref="fileInput" style="display: none;" />
 </template>
 

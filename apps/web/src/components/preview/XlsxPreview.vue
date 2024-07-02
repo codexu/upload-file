@@ -1,6 +1,5 @@
 <template>
-  <h2>XLSX 预览</h2>
-  <button @click="handleUpload">选择文件</button>
+  <a-button @click="handleUpload">选择文件</a-button>
   <input type="file" ref="fileInput" style="display: none;"
     accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
   <div ref="container" v-html="html"></div>
