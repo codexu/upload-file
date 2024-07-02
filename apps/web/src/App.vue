@@ -25,6 +25,7 @@
           <DropArea />
         </a-collapse-panel>
         <a-collapse-panel header="文件夹">
+          <DirectoryUpload />
         </a-collapse-panel>
         <a-collapse-panel header="文件过滤">
         </a-collapse-panel>
@@ -67,4 +68,5 @@ import PdfPreview from './components/preview/PdfPreview.vue'
 import DocxPreview from './components/preview/DocxPreview.vue'
 import XlsxPreview from './components/preview/XlsxPreview.vue'
 import DropArea from './components/action/DropArea.vue'
+import DirectoryUpload from './components/action/DirectoryUpload.vue'
 </script>

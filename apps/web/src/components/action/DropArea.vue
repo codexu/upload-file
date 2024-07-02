@@ -2,13 +2,12 @@
   <div class="drop-area" ref="dropArea">
     <span>拖拽文件到这里</span>
   </div>
-  <span v-for="(file, index) in fileList" :key="index" class="file-item">
-    {{ index + 1 }}. {{ file.name }} ({{ file.size }})
-  </span>
+  <FileList :files="fileList" />
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import FileList from '../FileList.vue';
 
 const dropArea = ref<HTMLDivElement>();
 const fileList = ref<File[]>([]);
@@ -44,8 +43,5 @@ onMounted(() => {
   border: 2px dashed #ccc;
   border-radius: 5px;
   background-color: #efefef;
-}
-.file-item{
-  display: block;
 }
 </style>
