@@ -5,6 +5,7 @@ import ImagePreview from './components/ImagePreview.vue'
 import VideoCover from './components/VideoCover.vue'
 import PdfPreview from './components/PdfPreview.vue'
 import DocxPreview from './components/DocxPreview.vue'
+import XlsxPreview from './components/XlsxPreview.vue'
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import DocxPreview from './components/DocxPreview.vue'
     <VideoCover />
     <PdfPreview />
     <DocxPreview />
+    <XlsxPreview />
   </div>
 </template>
