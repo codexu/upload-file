@@ -28,6 +28,7 @@
           <DirectoryUpload />
         </a-collapse-panel>
         <a-collapse-panel header="文件过滤">
+          <FileAccept />
         </a-collapse-panel>
         <a-collapse-panel header="剪贴板">
         </a-collapse-panel>
@@ -69,4 +70,5 @@ import DocxPreview from './components/preview/DocxPreview.vue'
 import XlsxPreview from './components/preview/XlsxPreview.vue'
 import DropArea from './components/action/DropArea.vue'
 import DirectoryUpload from './components/action/DirectoryUpload.vue'
+import FileAccept from './components/action/FileAccept.vue'
 </script>
